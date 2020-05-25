@@ -32,5 +32,5 @@ const persistor = createPersistor({
 });
 
 export default function configureStore(initialState={}) {
- return createStore(rootReducer, initialState, applyMiddleware(persistor,thunk));
+ return createStore(rootReducer, initialState, applyMiddleware(thunk, persistor));
 }
