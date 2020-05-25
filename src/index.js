@@ -7,6 +7,7 @@ import { hydrate } from "redux-easy-persist";
 import { Provider } from 'react-redux';
 import configureStore from './store';
 
+// get the store
 let store = configureStore();
 
 // this would retrieve the store from persistent storage
